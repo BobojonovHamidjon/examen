@@ -1,0 +1,55 @@
+.header{
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.25);
+    background: #fff;
+    padding: 20px 0;
+    &-row{
+        @include flex(center, space-between);
+    }
+    &-link{
+        font-family: $header-font;
+        font-weight: 600;
+        font-size: 16px;
+        color: $link-color;
+       &:not(:last-child){
+        margin-right: 64px;
+       }
+       &:nth-child(2){
+        color: #8D8C8B;
+       }
+       &:nth-child(3){
+        color: #8D8C8B;
+       }
+       &:nth-child(4){
+        color: #8D8C8B;
+        
+       }
+ }
+ &-button{
+    border-radius: 8px;
+    padding: 18px 36px;
+    width: 186px;
+    height: 55px;
+    background-color: $button-color;
+    color:#fff ;
+    &:hover{
+        border: 1px solid $button-color;
+        background-color:#fff;
+        color:$button-color;
+    }
+ }
+ &-select{
+    @include flex(center, center);
+ border: 1px solid #555351;
+border-radius: 8px;
+padding: 18px;
+width: 83px;
+height: 55px;
+&__text{
+   
+    font-weight: 600;
+font-size: 16px;
+color: #555351;
+}
+ }
+ 
+}

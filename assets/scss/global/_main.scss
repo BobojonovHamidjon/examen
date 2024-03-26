@@ -1,0 +1,44 @@
+.main{
+    &-row{
+        margin-top: 74px;
+    }
+}
+.section{
+    &-text{
+        margin-top: 40px;
+        @include flex(center, space-between);
+    }
+    &-the{
+        font-weight: 600;
+        font-size: 39px;
+        color: #000;
+        &__yelow{
+            color:$button-color;
+        }
+    }
+    &-button{
+        border: 1px solid $button-color;
+        border-radius: 8px;
+        padding: 18px 36px;
+        width: 141px;
+        height: 55px;
+        background-color: $button-color;
+        color:#fff ;
+        &:hover{
+            border: 1px solid $button-color;
+            background-color:#fff;
+            color:$button-color;
+        }
+    }
+    &-block{
+      margin-top: 40px;
+        @include flex(center, space-between);
+      &__imag{
+        row-gap: 20px;
+      }
+      &__image{
+        row-gap: 20px;
+      }
+    }
+   
+}
