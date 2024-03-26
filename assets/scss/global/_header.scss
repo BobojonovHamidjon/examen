@@ -1,29 +1,26 @@
 .header{
-    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.25);
-    background: #fff;
     padding: 20px 0;
-    &-row{
-        @include flex(center, space-between);
+   &-row{
+    @include flex(center, space-between);
+   } 
+   &-link{
+    font-weight: 600;
+    font-size: 16px;
+    color: #8d8c8b;
+    @include media (780){
+        display: none;
     }
-    &-link{
-        font-family: $header-font;
-        font-weight: 600;
-        font-size: 16px;
-        color: $link-color;
-       &:not(:last-child){
-        margin-right: 64px;
-       }
-       &:nth-child(2){
-        color: #8D8C8B;
-       }
-       &:nth-child(3){
-        color: #8D8C8B;
-       }
-       &:nth-child(4){
-        color: #8D8C8B;
+    &:not(:last-child){
+        margin-right: 48px;
         
-       }
- }
+        
+        
+    } 
+}
+    &-botton{
+        gap: 12px;
+        @include flex(center, space-between); 
+    }
  &-button{
     border-radius: 8px;
     padding: 18px 36px;
@@ -39,6 +36,9 @@
  }
  &-select{
     @include flex(center, center);
+    @include media (780){
+        display: none;
+    }
  border: 1px solid #555351;
 border-radius: 8px;
 padding: 18px;
@@ -50,6 +50,14 @@ height: 55px;
 font-size: 16px;
 color: #555351;
 }
+ }
+ &-menu{
+    
+        display: none;
+    
+    @include media (780){
+        display: block;
+    }
  }
  
 }
